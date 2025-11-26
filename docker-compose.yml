@@ -1,0 +1,28 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: my_project_db
+    environment:
+      MYSQL_DATABASE: IS436_Deliverable
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student123
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3309:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./init-db:/docker-entrypoint-initdb.d
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: my_project_phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
