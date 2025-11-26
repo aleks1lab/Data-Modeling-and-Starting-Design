@@ -28,14 +28,6 @@ System Architecture Diagram	system_architecture_diagram.png
 Technical Specifications	tech_spec.md
 Final Report (PDF)	Deliverable_4_Report.pdf
 
-These file names act as placeholders—upload your actual files to match them.
-
-👥 Team C Members
-Team Contact Email:
-
-📧 teamc436@umbc.edu
- (example — replace with preferred contact if needed)
-
 Name	Role	Email
 Aleksandre Okropiridze	Project Manager, GitHub Coordinator	aokropi1@umbc.edu
 
